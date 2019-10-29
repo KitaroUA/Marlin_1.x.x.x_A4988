@@ -81,7 +81,7 @@
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-#define STRING_CONFIG_H_AUTHOR "(Kitaro, default config)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Kitaro, A4498)" // Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
 #define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
@@ -785,13 +785,16 @@
 //#define X_PROBE_OFFSET_FROM_EXTRUDER 10  // X offset: -left  +right  [of the nozzle]
 //#define Y_PROBE_OFFSET_FROM_EXTRUDER 10  // Y offset: -front +behind [the nozzle]
 //#define Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [the nozzle]
-#define X_PROBE_OFFSET_FROM_EXTRUDER 38.65		//	!!MY!!	X offset: -left  +right  [of the nozzle]
-#define Y_PROBE_OFFSET_FROM_EXTRUDER 12			//	!!MY!!	Y offset: -front +behind [the nozzle]
+//#define X_PROBE_OFFSET_FROM_EXTRUDER 39    //  !!MY!!  X offset: -left  +right  [of the nozzle]
+//#define Y_PROBE_OFFSET_FROM_EXTRUDER -12     //  !!MY!!  Y offset: -front +behind [the nozzle]
+#define X_PROBE_OFFSET_FROM_EXTRUDER 0    //  !!MY!!  X offset: -left  +right  [of the nozzle]
+#define Y_PROBE_OFFSET_FROM_EXTRUDER 0     //  !!MY!!  Y offset: -front +behind [the nozzle]
 #define Z_PROBE_OFFSET_FROM_EXTRUDER -1.71		//	!!MY!!	Z offset: -below +above  [the nozzle] -set nozzle lower, +set nozzle upper
 
 
 // Certain types of probes need to stay away from edges
-#define MIN_PROBE_EDGE 10
+//#define MIN_PROBE_EDGE 10
+#define MIN_PROBE_EDGE 0 //  !!MY!!
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
